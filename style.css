@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    
+   
+    color: #333;
+background:linear-gradient(45deg,red,purple,orange,green);
+    animation: bgbody 10s ease-in-out infinite;
+   background-size: 300% 300%;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+   
+    justify-content: center;
+    min-height: 1000px;
+    background-color: white;
+    border: 10px solid;
+    background-image: url(wp7447292-cv-wallpapers.jpg);
+    background-size: 300%;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+
+}
+@media(max-width:767px){
+    .container{
+       margin: 0;
+       margin-top: 0;
+    }
+    .content{
+        margin-top: 0 !important;
+    }
+}
+.content{
+    margin-top: 20px;
+    
+}
+.logo{
+    height: 200px;
+    position: relative;
+   display: flex;
+   justify-content: center;
+    margin-top: 20px
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 15px groove deepskyblue;
+}
+.container h1{
+    position: relative;
+  min-height: 43px;
+    
+    text-align: center;
+  
+    margin-top: 10px;
+    margin-top: 20px;
+    transition: 0.4s;
+    
+}
+p{
+    font-weight: bold;
+}
+.container h1::after{
+content: '';
+display: flex;
+width: 70%;
+height: 1px;
+background-color: #333;
+justify-content: center;
+position: relative;
+left: 130px;
+margin: 20px;
+margin-bottom: 90px;
+}
+@media(min-width:200px){
+    .container h1::after{
+        left:30px;
+    }
+}
+@media(min-width:400px){
+    .container h1::after{
+        left:90px;
+    }
+}
+@media(min-width:768px){
+    .container h1::after{
+        left:90px;
+    }
+}
+@media(min-width:992px){
+    .container h1::after{
+        left:130px;
+    }
+}
+
+main{
+display:grid;
+grid-template-columns: 2fr 2fr;
+text-align: center;
+line-height: 3;
+}
+h2{
+  
+    margin: 5px;
+    color: white !important;
+    padding: 5px;
+    transition: 0.3s;
+animation-name: animh2;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+
+animation-fill-mode: forwards;
+font-weight: bolder;
+}
+footer{
+    position: relative;
+    text-align: center;
+    min-height: 500px;
+    top: 400px;
+    width: 100%;
+
+
+}
+footer p{
+    top: 67px;
+    position: relative;
+    color: white;
+}
+
+.footer{
+    position: relative;
+    text-align: center;
+    top: 205px ;
+}
+@media(min-width:768px){
+    .footer{
+       top:205px ;
+    }
+}
+@media(min-width:500px){
+    .footer{
+        top:173px;
+    }
+}
+@media(max-width:600px){
+    .footer{
+        top:50px;
+    }
+}
+@keyframes bgbody {
+   0% {background-position: 0% 50%;}
+   50% {background-position: 100% 50%;}
+100%{background-position: 0% 50%;}
+   
+
+}
+
+h2:hover{
+   letter-spacing: 2px;
+}
